@@ -1,27 +1,12 @@
 package series7;
 
-public class Vehicle {
-    private String manufacturer;
-    private String frameNumber;
+public abstract class Vehicle {
+    private final String manufacturer;
+
+    private final String frameNumber;
 
     public Vehicle(String manufacturer, String frameNumber) {
         this.manufacturer = manufacturer;
-        this.frameNumber = frameNumber;
-    }
-
-    public String getManufacturer() {
-        return manufacturer;
-    }
-
-    public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
-    }
-
-    public String getFrameNumber() {
-        return frameNumber;
-    }
-
-    public void setFrameNumber(String frameNumber) {
         this.frameNumber = frameNumber;
     }
 
