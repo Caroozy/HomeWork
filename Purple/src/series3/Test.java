@@ -2,10 +2,11 @@ package series3;
 
 public class Test {
     public static void main(String[] args) {
-        Inventory i1=new Inventory();
-        Inventory i2=new Inventory();
-        Inventory i3=new Inventory();
-        System.out.println(FactoryUtils.totalSize(i1,i2,i3));
-        System.out.println(FactoryUtils.totalCount(i1,i2,i3));
+        Inventory inventory1=new Inventory();
+        Inventory inventory2=new Inventory(FactoryUtils.initItems());
+        Inventory inventory3=new Inventory();
+        inventory3.setItems(inventory2.getItems());
+        System.out.println(FactoryUtils.totalSize(inventory1,inventory2,inventory3));
+        System.out.println(FactoryUtils.totalCount(inventory1,inventory2,inventory3));
     }
 }
