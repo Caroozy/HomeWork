@@ -7,6 +7,9 @@ public class Inventory {
 
     public Inventory() {
         this.items = new Item[10];
+        for (int i=0;i<this.items.length;i++){
+            this.items[i]=new Item("Initialized","Initialized");
+        }
     }
 
     public Inventory(Item[] items) {

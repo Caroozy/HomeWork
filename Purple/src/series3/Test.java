@@ -6,7 +6,10 @@ public class Test {
         Inventory inventory2=new Inventory(FactoryUtils.initItems());
         Inventory inventory3=new Inventory();
         inventory3.setItems(inventory2.getItems());
-        System.out.println(FactoryUtils.totalSize(inventory1,inventory2,inventory3));
-        System.out.println(FactoryUtils.totalCount(inventory1,inventory2,inventory3));
+        System.out.println(inventory1);
+        System.out.println(inventory2);
+        System.out.println(inventory3);
+        System.out.println("Inventory amount: "+FactoryUtils.totalSize(inventory1,inventory2,inventory3));
+        System.out.println("Inventory initialized amount: "+FactoryUtils.totalCount(inventory1,inventory2,inventory3));
     }
 }

@@ -32,13 +32,13 @@ public class FactoryUtils {
     public static int totalCount(Inventory inventory1, Inventory inventory2, Inventory inventory3){
         int count=0;
         for (int i=0;i<inventory1.getItems().length;i++){
-            if (inventory1.getItems()[i].getCategory()!=null){count++;}
+            if (inventory1.getItems()[i].getCategory()!="Initialized"){count++;}
         }
         for (int i=0;i<inventory2.getItems().length;i++){
-            if (inventory2.getItems()[i].getCategory()!=null){count++;}
+            if (inventory2.getItems()[i].getCategory()!="Initialized"){count++;}
         }
         for (int i=0;i<inventory3.getItems().length;i++){
-            if (inventory3.getItems()[i].getCategory()!=null){count++;}
+            if (inventory3.getItems()[i].getCategory()!="Initialized"){count++;}
         }
         return count;
     }
