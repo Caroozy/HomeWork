@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Helper {
     public static double avgSalary(List<Employee> employees) {
+        if (employees.size()==0){return 0;}
         int total = 0;
         for (Employee employee : employees) {
             total += employee.getSalary();
@@ -12,10 +13,11 @@ public class Helper {
     }
 
     public static double avgManagementSalary(List<Employee> employees) {
+        if (employees.size()==0){return 0;}
         int total = 0;
         int count=0;
         for (Employee employee : employees) {
-            if (employee instanceof Manager || employee instanceof Director) {
+            if (employee instanceof Manager) {
                 total += employee.getSalary();
                 count++;
             }
