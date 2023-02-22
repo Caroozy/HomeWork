@@ -1,6 +1,4 @@
-package seires2;
-
-import java.util.List;
+package series2;
 
 public class Helper {
 

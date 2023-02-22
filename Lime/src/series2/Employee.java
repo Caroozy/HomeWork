@@ -1,4 +1,4 @@
-package seires2;
+package series2;
 
 import java.util.Objects;
 

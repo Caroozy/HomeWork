@@ -1,4 +1,4 @@
-package seires2;
+package series2;
 
 public class Engineer extends Employee {
     private String speciality;

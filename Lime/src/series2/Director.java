@@ -1,4 +1,4 @@
-package seires2;
+package series2;
 
 public class Director extends Manager {
     private String group;
