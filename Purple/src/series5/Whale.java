@@ -4,6 +4,7 @@ public class Whale extends Fish{
     int lengthInMeters;
 
     public Whale(int lengthInMeters) {
+        super();
         this.lengthInMeters = lengthInMeters;
         this.speed=90;
     }

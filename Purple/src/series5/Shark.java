@@ -3,6 +3,7 @@ package series5;
 public class Shark extends Fish {
     int numOfTeeth;
     public Shark(int numOfTeeth){
+        super();
         this.numOfTeeth=numOfTeeth;
         this.speed=120;
     }
