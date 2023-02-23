@@ -18,7 +18,7 @@ public class Disease {
     @Override
     public String toString() {
         return  "{Disease description=" + diseaseDescription +
-                ", timeToCure=" + timeToCure +
+                ", timeToCure=" + timeToCure +" Days "+
                 '}';
     }
 }
